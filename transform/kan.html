@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div {
+				width: 341px;
+				height: 500px;
+				background-image:url(img/exam-004.png);
+				transform-origin: left bottom;
+				transition: 1s;
+				display: inline-block;
+			}
+			
+			button:hover~div {
+				transform: rotate(80deg);
+			}
+			
+			button:hover~p {
+				transform: rotateZ(30deg);
+				top: 80px;
+			}
+			
+			p {
+				height: 260px;
+				width: 260px;
+				background-image:url(img/exam-003.png);
+				display: inline-block;
+				margin-left: 230px;
+				position: relative;
+				top: -80px;
+				transition: 0.5s 0.2s;
+			}
+		</style>
+	</head>
+
+	<body>
+		<button>我打</button><br/>
+		<div></div>
+		<p>来打我呀</p>
+	</body>
+
+</html>

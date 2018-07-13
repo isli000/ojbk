@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>test</title>
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+				background-image: url(img/111.jpg);
+				background-position: center;
+				background-size: cover;
+				transition:1s;
+			}
+			button:hover ~div{
+				/*transform: rotate(3600deg);*/
+				transform: rotateX(405deg);
+			}
+			
+				
+			
+		</style>
+	</head>
+	
+	<body>
+		<button>悬浮</button>
+		<div></div>
+	</body>
+</html>
